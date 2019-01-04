@@ -1,0 +1,14 @@
+
+/*
+****************************************
+JUMBOTRON
+****************************************
+*/
+header {
+  min-height: 100vh;
+}
+.jumbotron{
+  min-height: 100vh;
+  padding: 0px;
+  margin: 0px;
+}
