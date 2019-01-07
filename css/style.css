@@ -11,6 +11,16 @@ nav {
 
 /*
 ****************************************
+MAIN CONTAINER
+****************************************
+*/
+@media (max-width: 768px){
+  .container {
+    max-width: 600px;
+  }
+}
+/*
+****************************************
 JUMBOTRON
 ****************************************
 */
@@ -34,12 +44,20 @@ header {
   text-align: center;
 }
 
+.jumbotron p {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
 @media only screen and (min-width: 790px) {
   .jumbotron div{
     padding-top: 30%;
   }
   .jumbotron h1 {
     text-align: left;
+  }
+  .jumbotron p {
+    padding-left: 0%;
   }
 }
 
@@ -55,11 +73,11 @@ CAROUSEL
 ****************************************
 */
 .carousel {
-  margin: 10% auto;
+  margin-top: 10%;
+  margin-bottom: 10%;
 }
 .carousel-inner {
   margin: 0 auto;
-  width: 80%;
   border: black solid 1px;
   }
 .carousel-control-prev-icon{
@@ -70,4 +88,89 @@ CAROUSEL
 }
 .carousel-caption {
   background-color: rgba(0,0,0,0.6);
+}
+
+@media (min-width: 992px) {
+  .carousel-inner {
+    width: 80%;
+  }
+}
+
+
+/*
+****************************************
+LINK SECTIONS
+****************************************
+*/
+.page_link img {
+  max-width: 75%;
+}
+
+hr {
+  width: 75%;
+  border-top: 1px solid black;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+.img-left, .img-right {
+  margin-left: 13%;
+}
+
+.description-left, .description-right {
+  margin-left: 25%
+}
+
+.description-left p, .description-right p {
+  padding-right: 30%;
+}
+
+.to-hide-sm {
+  display: none
+}
+
+@media only screen and (min-width: 768px){
+  .img-left {
+    margin-left: 20%;
+  }
+
+  .img-right {
+    margin-right: 20%;
+    margin-left: 0%;
+  }
+
+  .description-right, .description-left {
+    padding-top: 7%;
+    margin-left: 0%;
+  }
+
+  .description-right {
+    padding-right: 20%;
+  }
+
+  .description-left {
+    padding-left: 20%;
+  }
+
+  .to-hide-md {
+    display: none;
+  }
+
+  .to-hide-sm {
+    display: block;
+  }
+
+  .description-left p, .description-right p {
+    padding-right: 0%;
+  }
+}
+
+/*
+****************************************
+FOOTER
+****************************************
+*/
+.fa {
+  font-size: 30px;
+  margin-left: 3%;
 }
