@@ -11,12 +11,19 @@
 		<!--<link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">-->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link href="css/style.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
 	</head>
 	<body id="index">
-		<header>
+		<header id='header'>
+			<div class="jumbotron jumbotron-fluid">
+			  <div class="container">
+			    <h1 class="display-4">Welcome, I'm <span>Aminat Amoo.</span> Follow my Journey into <span>Tech</span></h1>
+			    <a href='#image_aminat'><button type="button" class="btn btn-outline-dark">View Site</button></a>
+			  </div>
+			</div>
 			<!-- Navbar -->
-			<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-				<a class="navbar-brand" href="index.html">Icon</a>
+			<nav class="navbar navbar-expand-lg navbar-dark bg-dark primary-navbar">
+				<a class="navbar-brand" href="index.html">Aminat Amoo</a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
@@ -32,7 +39,7 @@
 							<a class="nav-link" href="">Projects</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="">Blog</a>
+							<a class="nav-link" href="blog.html">Blog</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="">Contacts</a>
@@ -40,17 +47,21 @@
 					</ul>
 				</div>
 			</nav>
-			<div class="jumbotron jumbotron-fluid">
-			  <div class="container">
-			    <h1 class="display-4">TITLE</h1>
-			    <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
-			  </div>
-			</div>
 		</header>
 
 		<main class="container">
+			<!-- Main Image -->
+			<section class="main-image-intro row">
+				<div class='col-md-6'>
+					<img id='image_aminat' src="images/aminat.png" alt="Professional photo of Aminat Amoo">
+				</div>
+				<div id='intro-info' class='col-md-6' >
+					<h2>Some stuff about me! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ante ante, imperdiet vel velit ut, varius sodales metus. Donec mollis, dolor quis vestibulum ultricies, odio mauris egestas nulla, sed laoreet nibh orci nec ipsum. Nullam consectetur metus ac rhoncus fermentum. Quisque non ipsum efficitur, tempor tortor quis, euismod augue. </h2>
+				</div>
+			</section>
 			<!-- Carousel -->
 			<section class="carousel">
+				<hr>
 				<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 				  <ol class="carousel-indicators">
 				    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -61,22 +72,19 @@
 				    <div class="carousel-item active">
 				      <img class="d-block w-100" src="images/mafmaf_project.png" alt="First slide">
 							<div class="carousel-caption d-none d-md-block">
-						    <h5>MafMaf Website</h5>
-						    <p>Web development project which used HTML, CSS and JS/jQuery</p>
-						  </div>
+						    <h5>MafMaf Website - Web dev</h5>
+							</div>
 				    </div>
 				    <div class="carousel-item">
-				      <img class="d-block w-100" src="images/pyth_shapes_project.png" alt="Second slide">
+				      <img class="d-block w-100" src="images/pyth_shapes.png" alt="Second slide">
 							<div class="carousel-caption d-none d-md-block">
-								<h5>Animated Shapes</h5>
-								<p>Python project involving the use of the turtle graphics module</p>
+								<h5>Animated Shapes - Python</h5>
 							</div>
 				    </div>
 				    <div class="carousel-item">
 				      <img class="d-block w-100" src="images/wit_project.png" alt="Third slide">
 							<div class="carousel-caption d-none d-md-block">
-								<h5>Women in Technology</h5>
-								<p>Web development project dediated to the pioneering women in the technology field. Use of HTML and CSS</p>
+								<h5>Women in Technology - Web dev</h5>
 							</div>
 				    </div>
 				  </div>
@@ -90,63 +98,43 @@
 				  </a>
 				</div>
 			</section>
+
 			<hr>
-			<!-- About Link section -->
-			<section id="about-link" class="row page_link">
-				<div class="col-md-6">
-					<img class="img-left" src="images\about-link.png" alt="icon of a display picture">
-				</div>
-				<div class="col-md-6 description-right">
-					<h3>About</h3>
-					<p>Brief description on what this page contains</p>
-					<a class="btn btn-primary" href="#" role="button">Visit page</a>
-				</div>
-			</section>
-			<hr>
-			<!-- Projects Link section -->
-			<section  id="projects-link" class="row page_link">
-				<div class="col-md-6 description-left to-hide-sm">
-					<h3>Projects</h3>
-					<p>Brief description on what this page contains</p>
-					<a class="btn btn-primary" href="#" role="button">Visit page</a>
-				</div>
-				<div class="col-md-6">
-					<img class="img-right" src="images\projects-link.png" alt="icon of presentation page">
-				</div>
-				<div class="col-md-6 description-left to-hide-md">
-					<h3>Projects</h3>
-					<p>Brief description on what this page contains</p>
-					<a class="btn btn-primary" href="#" role="button">Visit page</a>
-				</div>
-			</section>
-			<hr>
-			<!-- Blog Link section -->
-			<section id="blog-link" class="row page_link">
-				<div class="col-md-6 blog-link">
-					<img class="img-left" src="images\blog-link.png" alt="icon of a pen editing a webpage">
-				</div>
-				<div class="col-md-6 description-right">
-					<h3>Blog</h3>
-					<p>Brief description on what this page contains</p>
-					<a class="btn btn-primary" href="#" role="button">Visit page</a>
-				</div>
-			</section>
-			<hr>
-			<!-- Contact Link section -->
-			<section id="contact-link" class="row page_link">
-				<div class="col-md-6 description-left to-hide-sm">
-					<h3>Contact</h3>
-					<p>Brief description on what this page contains</p>
-					<a class="btn btn-primary" href="#" role="button">Visit page</a>
-				</div>
-				<div class="col-md-6">
-					<img class="img-right" src="images\contact-link.png" alt="icon of two chat bubbles">
-				</div>
-				<div class="col-md-6 description-left to-hide-md">
-					<h3>Contact</h3>
-					<p>Brief description on what this page contains</p>
-					<a class="btn btn-primary" href="#" role="button">Visit page</a>
-				</div>
+
+			<!--  Link section -->
+			<section  class="row page_link">
+				<div class="col-md-4 border">
+					<img class="img-adjust" src="images\about-link.png" alt="icon of a display picture">
+					<div class='link-descriptions'>
+						<h3>About</h3>
+						<p>Brief description on what this page contains</p>
+					</div>
+					<div class='link-button'>
+						<a class="btn btn-primary" href="#" role="button">Visit page</a>
+					</div>
+				</div><!--/col-->
+
+				<div class="col-md-4 border">
+					<img class="img-adjust" src="images\projects-link.png" alt="icon of presentation page">
+					<div class='link-descriptions'>
+						<h3>Projects</h3>
+						<p>Brief description on what this page contains</p>
+					</div>
+					<div class='link-button'>
+						<a class="btn btn-primary" href="" role="button">Visit page</a>
+					</div>
+				</div><!--/col-->
+
+				<div class="col-md-4 border ">
+					<img class="img-adjust" src="images\blog-link.png" alt="icon of a pen editing a webpage">
+					<div class='link-descriptions'>
+						<h3>Blog</h3>
+						<p>Brief description on what this page contains</p>
+					</div>
+					<div class='link-button'>
+						<a class="btn btn-primary" href="blog.html" role="button">Visit page</a>
+					</div>
+				</div><!--/col-->
 			</section>
 		</main>
 		<footer class="mt-5 pt-5 pb-4 pl-3 pr-3 bg-dark">
@@ -177,4 +165,6 @@
 			integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
 			crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+		<script src="js\script.js"></script>
 	</body>
+</html>

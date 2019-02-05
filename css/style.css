@@ -1,4 +1,20 @@
 
+hr{
+  margin-top: 15%;
+  margin-bottom: 15%;
+  background-color:black;
+}
+
+/*
+****************************************
+BODY
+****************************************
+*/
+#blog{
+  background-image: url(https://media.giphy.com/media/3o85fWdjLYnF5Sf7sk/giphy.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 /*
 ****************************************
@@ -7,6 +23,10 @@ NAVBAR
 */
 nav {
   border-bottom: black solid 1px;
+}
+
+.bg-dark {
+    background-color: rgba(32, 35, 41, 0.8)!important;
 }
 
 /*
@@ -29,6 +49,9 @@ header {
 }
 
 .jumbotron {
+  background-image: url(https://media.giphy.com/media/3o85fWdjLYnF5Sf7sk/giphy.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
   min-height: 100vh;
   padding: 0px;
   margin: 0px;
@@ -36,28 +59,39 @@ header {
 }
 
 .jumbotron div {
-  padding-top: 50%;
+  padding: 20% 2%;
   margin: 0 auto;
+  text-align:center;
+  background-color: rgba(0,0,0,0.6);
 }
 
-.jumbotron h1 {
-  text-align: center;
+.jumbotron h1{
+  padding: 0 3%;
+  font-family: 'Patua One', cursive;
+  color: grey;
 }
 
-.jumbotron p {
-  padding-left: 5%;
-  padding-right: 5%;
+.jumbotron button {
+  padding: 2% 5%;
+  margin-top: 2%
+}
+
+.jumbotron a button {
+  color:white;
+}
+
+.jumbotron span{
+  color:white;
 }
 
 @media only screen and (min-width: 790px) {
   .jumbotron div{
-    padding-top: 30%;
+    padding: 20% 5%;
   }
-  .jumbotron h1 {
-    text-align: left;
-  }
-  .jumbotron p {
-    padding-left: 0%;
+
+  .jumbotron button:hover, .jumbotron a:hover {
+    color:white;
+    text-decoration: none;
   }
 }
 
@@ -69,12 +103,33 @@ header {
 
 /*
 ****************************************
+MAIN INTRO
+****************************************
+*/
+#image_aminat{
+  max-width: 75%;
+  margin-left: 13%;
+  border: 0.2px solid lightgrey;
+  border-radius: 50%;
+}
+
+#intro-info{
+  margin: auto 0;
+  border-left:1px black solid;
+}
+.main-image-intro{
+  margin-top: 20%;
+}
+
+
+
+/*
+****************************************
 CAROUSEL
 ****************************************
 */
 .carousel {
-  margin-top: 10%;
-  margin-bottom: 10%;
+  display:none;
 }
 .carousel-inner {
   margin: 0 auto;
@@ -88,11 +143,25 @@ CAROUSEL
 }
 .carousel-caption {
   background-color: rgba(0,0,0,0.6);
+  right: 0%;
+  bottom: 20px;
+  left: 55%;
 }
 
+.carousel-indicators {
+    bottom: 15px;
+    padding-left: 0;
+    margin-right: 0%;
+    margin-left: 49%;
+}
+
+
 @media (min-width: 992px) {
+  .carousel{
+    display:block;
+  }
   .carousel-inner {
-    width: 80%;
+    width: 90%;
   }
 }
 
@@ -106,63 +175,35 @@ LINK SECTIONS
   max-width: 75%;
 }
 
-hr {
-  width: 75%;
-  border-top: 1px solid black;
-  margin-top: 10%;
+.img-adjust{
+  margin-top: 35%;
   margin-bottom: 10%;
+  margin-left: 12%;
+}
 }
 
-.img-left, .img-right {
-  margin-left: 13%;
+.page_link a{
+  font-size: large;
 }
 
-.description-left, .description-right {
-  margin-left: 25%
+.page_link{
+  margin-bottom: 15%;
 }
 
-.description-left p, .description-right p {
-  padding-right: 30%;
+.link-descriptions{
+  padding:5%;
+}
+.link-button{
+    text-align: right;
+    margin-top:5%;
+    padding:10%;
 }
 
-.to-hide-sm {
-  display: none
-}
 
 @media only screen and (min-width: 768px){
-  .img-left {
-    margin-left: 20%;
-  }
 
-  .img-right {
-    margin-right: 20%;
-    margin-left: 0%;
-  }
-
-  .description-right, .description-left {
-    padding-top: 7%;
-    margin-left: 0%;
-  }
-
-  .description-right {
-    padding-right: 20%;
-  }
-
-  .description-left {
-    padding-left: 20%;
-  }
-
-  .to-hide-md {
-    display: none;
-  }
-
-  .to-hide-sm {
-    display: block;
-  }
-
-  .description-left p, .description-right p {
-    padding-right: 0%;
-  }
+.border{
+  border:1px black solid!important;
 }
 
 /*
@@ -173,4 +214,7 @@ FOOTER
 .fa {
   font-size: 30px;
   margin-left: 3%;
+}
+.secondary-nav{
+  list-style-type: none;
 }
